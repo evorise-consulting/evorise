@@ -1,56 +1,943 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Evorise Consulting</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evorise Consulting - Your Partner in Impact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Business Consulting, Strategy, Growth, Evorise" name="keywords">
+    <meta content="Evorise Consulting provides expert solutions to help your business reach new heights." name="description">
+
+    <!-- Favicon -->
+    <link href="https://github.com/evorise-consulting/evorise/raw/main/Evorise%20Consulting%20-%20Company%20Profile.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Inline CSS -->
     <style>
-      body {
-        font-family: 'Bricolage Grotesque', sans-serif;
-        text-align: center;
-        margin: 50px;
-      }
-      .header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-      .header img {
-        height: 50px; /* Adjust size as needed */
-      }
-      .maintenance {
-        font-size: 18px;
-        color: orange;
-        font-weight: bold;
-      }
-      .subtitle {
-        font-size: 18px;
-        margin-top: 10px;
-      }
-      .cta {
-        font-weight: bold;
-        color: #007BFF;
-        margin-top: 20px;
-      }
-      .contact {
-        margin-top: 10px;
-      }
-      .footer {
-        font-size: 12px;
-        color: gray;
-        margin-top: 50px;
-      }
+        /*!
+         * Bootstrap v5.0.0 (https://getbootstrap.com/)
+         * Copyright 2011-2021 The Bootstrap Authors
+         * Copyright 2011-2021 Twitter, Inc.
+         * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+         */
+        :root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#f4c482;--bs-secondary:#fce5cb;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#fff;--bs-dark:#152440;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0))}*,*::before,*::after{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#6B6A75;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}hr{margin:1rem 0;color:inherit;background-color:currentColor;border:0;opacity:.25}hr:not([size]){height:1px}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin-top:0;margin-bottom:.5rem;font-family:"Barlow",sans-serif;font-weight:500;line-height:1.2;color:#152440}h1,.h1{font-size:calc(1.375rem + 1.5vw)}@media (min-width:1200px){h1,.h1{font-size:2.5rem}}h2,.h2{font-size:calc(1.325rem + .9vw)}@media (min-width:1200px){h2,.h2{font-size:2rem}}h3,.h3{font-size:calc(1.3rem + .6vw)}@media (min-width:1200px){h3,.h3{font-size:1.75rem}}h4,.h4{font-size:calc(1.275rem + .3vw)}@media (min-width:1200px){h4,.h4{font-size:1.5rem}}h5,.h5{font-size:1.25rem}h6,.h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul{padding-left:2rem}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small,.small{font-size:.875em}a{color:#000;text-decoration:none}a:hover{color:#333}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}img,svg{vertical-align:middle}.container,.container-fluid,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-sm,.container-md{max-width:720px}}@media (min-width:992px){.container,.container-sm,.container-md,.container-lg{max-width:960px}}@media (min-width:1200px){.container,.container-sm,.container-md,.container-lg,.container-xl{max-width:1140px}}@media (min-width:1400px){.container,.container-sm,.container-md,.container-lg,.container-xl,.container-xxl{max-width:1320px}}.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x)/-2);margin-left:calc(var(--bs-gutter-x)/-2)}.row>*{flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)/2);padding-left:calc(var(--bs-gutter-x)/2);margin-top:var(--bs-gutter-y)}.col{flex:1 0 0%}.col-auto{flex:0 0 auto;width:auto}.col-1{flex:0 0 auto;width:8.33333333%}.col-2{flex:0 0 auto;width:16.66666667%}.col-3{flex:0 0 auto;width:25%}.col-4{flex:0 0 auto;width:33.33333333%}.col-5{flex:0 0 auto;width:41.66666667%}.col-6{flex:0 0 auto;width:50%}.col-7{flex:0 0 auto;width:58.33333333%}.col-8{flex:0 0 auto;width:66.66666667%}.col-9{flex:0 0 auto;width:75%}.col-10{flex:0 0 auto;width:83.33333333%}.col-11{flex:0 0 auto;width:91.66666667%}.col-12{flex:0 0 auto;width:100%}.g-0,.gx-0{--bs-gutter-x:0}.g-0,.gy-0{--bs-gutter-y:0}.g-5,.gx-5{--bs-gutter-x:3rem}.g-5,.gy-5{--bs-gutter-y:3rem}@media (min-width:768px){.col-md-6{flex:0 0 auto;width:50%}}@media (min-width:992px){.col-lg-3{flex:0 0 auto;width:25%}.col-lg-4{flex:0 0 auto;width:33.33333333%}.col-lg-5{flex:0 0 auto;width:41.66666667%}.col-lg-6{flex:0 0 auto;width:50%}}.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#6B6A75;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.form-control{transition:none}}.form-control:focus{color:#6B6A75;background-color:#fff;border-color:#f9a9ad;outline:0;box-shadow:0 0 0 .25rem rgba(243,82,90,.25)}.form-select{display:block;width:100%;padding:.375rem 2.25rem .375rem .75rem;-moz-padding-start:calc(.75rem - 3px);font-size:1rem;font-weight:400;line-height:1.5;color:#6B6A75;background-color:#fff;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");background-repeat:no-repeat;background-position:right .75rem center;background-size:16px 12px;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;-webkit-appearance:none;-moz-appearance:none;appearance:none}@media (prefers-reduced-motion:reduce){.form-select{transition:none}}.form-select:focus{border-color:#f9a9ad;outline:0;box-shadow:0 0 0 .25rem rgba(243,82,90,.25)}.form-floating{position:relative}.form-floating>.form-control,.form-floating>.form-select{height:calc(3.5rem + 2px);line-height:1.25}.form-floating>label{position:absolute;top:0;left:0;height:100%;padding:1rem .75rem;pointer-events:none;border:1px solid rgba(0,0,0,0);transform-origin:0 0;transition:opacity .1s ease-in-out,transform .1s ease-in-out}@media (prefers-reduced-motion:reduce){.form-floating>label{transition:none}}.btn{display:inline-block;font-weight:400;line-height:1.5;color:#6B6A75;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);padding:.375rem .75rem;font-size:1rem;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.btn{transition:none}}.btn:hover{color:#6B6A75}.btn:focus{outline:0;box-shadow:0 0 0 .25rem rgba(243,82,90,.25)}.btn-primary{color:#000;background-color:#f4c482;border-color:#f4c482}.btn-primary:hover{color:#000;background-color:#f2b96a;border-color:#f2b96a}.btn-secondary{color:#000;background-color:#F6F6F6;border-color:#F6F6F6}.btn-secondary:hover{color:#000;background-color:#f7f7f7;border-color:#f7f7f7}.btn-dark{color:#fff;background-color:#152440;border-color:#152440}.btn-dark:hover{color:#fff;background-color:#121f36;border-color:#111d33}.fade{transition:opacity .15s linear}@media (prefers-reduced-motion:reduce){.fade{transition:none}}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.dropdown{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid rgba(0,0,0,0);border-bottom:0;border-left:.3em solid rgba(0,0,0,0)}.dropdown-menu{position:absolute;z-index:1000;display:none;min-width:10rem;padding:.5rem 0;margin:0;font-size:1rem;color:#6B6A75;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}.dropdown-menu.show{display:block}.dropdown-item{display:block;width:100%;padding:.25rem 1rem;clear:both;font-weight:400;color:#212529;text-align:inherit;text-decoration:none;white-space:nowrap;background-color:rgba(0,0,0,0);border:0}.dropdown-item:hover,.dropdown-item:focus{color:#1e2125;background-color:#e9ecef}.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem;color:#000;text-decoration:none;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out}@media (prefers-reduced-motion:reduce){.nav-link{transition:none}}.nav-link:hover,.nav-link:focus{color:#333}.navbar{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:.5rem;padding-bottom:.5rem}.navbar>.container-fluid{display:flex;flex-wrap:inherit;align-items:center;justify-content:space-between}.navbar-brand{padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;text-decoration:none;white-space:nowrap}.navbar-nav{display:flex;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static}.navbar-collapse{flex-basis:100%;flex-grow:1;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:rgba(0,0,0,0);border:1px solid rgba(0,0,0,0);border-radius:.25rem;transition:box-shadow .15s ease-in-out}@media (prefers-reduced-motion:reduce){.navbar-toggler{transition:none}}.navbar-toggler:hover{text-decoration:none}.navbar-toggler:focus{text-decoration:none;outline:0;box-shadow:0 0 0 .25rem}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;background-repeat:no-repeat;background-position:center;background-size:100%}@media (min-width:992px){.navbar-expand-lg{flex-wrap:nowrap;justify-content:flex-start}.navbar-expand-lg .navbar-nav{flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg .navbar-collapse{display:flex!important;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-brand:hover,.navbar-light .navbar-brand:focus{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.55)}.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus{color:rgba(0,0,0,.7)}.navbar-light .navbar-nav .nav-link.active{color:rgba(0,0,0,.9)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.55);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.carousel{position:relative}.carousel-inner{position:relative;width:100%;overflow:hidden}.carousel-inner::after{display:block;clear:both;content:""}.carousel-item{position:relative;display:none;float:left;width:100%;margin-right:-100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:transform .6s ease-in-out}@media (prefers-reduced-motion:reduce){.carousel-item{transition:none}}.carousel-item.active,.carousel-item-next,.carousel-item-prev{display:block}.carousel-fade .carousel-item{opacity:0;transition-property:opacity;transform:none}.carousel-fade .carousel-item.active{z-index:1;opacity:1}.carousel-control-prev,.carousel-control-next{position:absolute;top:0;bottom:0;z-index:1;display:flex;align-items:center;justify-content:center;width:15%;padding:0;color:#fff;text-align:center;background:0 0;border:0;opacity:.5;transition:opacity .15s ease}@media (prefers-reduced-motion:reduce){.carousel-control-prev,.carousel-control-next{transition:none}}.carousel-control-prev:hover,.carousel-control-prev:focus,.carousel-control-next:hover,.carousel-control-next:focus{color:#fff;text-decoration:none;outline:0;opacity:.9}.carousel-control-prev{left:0}.carousel-control-next{right:0}.carousel-control-prev-icon,.carousel-control-next-icon{display:inline-block;width:2rem;height:2rem;background-repeat:no-repeat;background-position:50%;background-size:100% 100%}.carousel-control-prev-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")}.carousel-control-next-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")}.carousel-caption{position:absolute;right:15%;bottom:1.25rem;left:15%;padding-top:1.25rem;padding-bottom:1.25rem;color:#fff;text-align:center}.visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.display-1{font-size:calc(1.625rem + 4.5vw);font-weight:700;line-height:1.2}@media (min-width:1200px){.display-1{font-size:5rem}}.display-5{font-size:calc(1.425rem + 2.1vw);font-weight:700;line-height:1.2}@media (min-width:1200px){.display-5{font-size:3rem}}.shadow-sm{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important}.position-relative{position:relative!important}.position-absolute{position:absolute!important}.top-50{top:50%!important}.start-0{left:0!important}.bottom-0{bottom:0!important}.end-0{right:0!important}.w-25{width:25%!important}.w-100{width:100%!important}.h-100{height:100%!important}.d-flex{display:flex!important}.d-none{display:none!important}.d-lg-block{display:block!important}.d-inline-flex{display:inline-flex!important}.flex-column{flex-direction:column!important}.flex-shrink-0{flex-shrink:0!important}.justify-content-center{justify-content:center!important}.justify-content-start{justify-content:flex-start!important}.align-items-center{align-items:center!important}.m-0{margin:0!important}.mb-0{margin-bottom:0!important}.mb-2{margin-bottom:.5rem!important}.mb-3{margin-bottom:1rem!important}.mb-4{margin-bottom:1.5rem!important}.mb-5{margin-bottom:3rem!important}.me-2{margin-right:.5rem!important}.me-3{margin-right:1rem!important}.ms-auto{margin-left:auto!important}.p-0{padding:0!important}.p-3{padding:1rem!important}.p-4{padding:1.5rem!important}.p-5{padding:3rem!important}.px-3{padding-right:1rem!important;padding-left:1rem!important}.px-4{padding-right:1.5rem!important;padding-left:1.5rem!important}.px-5{padding-right:3rem!important;padding-left:3rem!important}.py-0{padding-top:0!important;padding-bottom:0!important}.py-2{padding-top:.5rem!important;padding-bottom:.5rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}.py-4{padding-top:1.5rem!important;padding-bottom:1.5rem!important}.py-6{padding-top:90px;padding-bottom:90px}.pe-0{padding-right:0!important}.pe-3{padding-right:1rem!important}.ps-3{padding-left:1rem!important}.ps-4{padding-left:1.5rem!important}.ps-5{padding-left:3rem!important}.text-center{text-align:center!important}.text-lg-start{text-align:left!important}.text-lg-end{text-align:right!important}.text-primary{color:#000!important}.text-white{color:#fff!important}.text-secondary{color:#F6F6F6!important}.text-uppercase{text-transform:uppercase!important}.bg-primary{background-color:#f4c482!important}.bg-secondary{background-color:#fce5cb!important}.bg-white{background-color:#fff!important}.bg-dark{background-color:#152440!important}.rounded-circle{border-radius:50%!important}.rounded-pill{border-radius:50rem!important}.border-end{border-right:1px solid #dee2e6!important}.border-top{border-top:1px solid #dee2e6!important}.border-bottom{border-bottom:1px solid #dee2e6!important}.fs-4{font-size:calc(1.275rem + .3vw)!important}@media (min-width:1200px){.fs-4{font-size:1.5rem!important}}
+
+        /********** Template CSS **********/
+        :root {
+            --primary: #f4c482;
+            --secondary: #fce5cb;
+            --light: #FFFFFF;
+            --dark: #152440;
+        }
+
+        h1,
+        h2,
+        .font-weight-bold {
+            font-weight: 700 !important;
+        }
+
+        h3,
+        h4,
+        .font-weight-semi-bold {
+            font-weight: 600 !important;
+        }
+
+        h5,
+        h6,
+        .font-weight-medium {
+            font-weight: 500 !important;
+        }
+
+        .pt-6 {
+            padding-top: 90px;
+        }
+
+        .pb-6 {
+            padding-bottom: 90px;
+        }
+
+        .py-6 {
+            padding-top: 90px;
+            padding-bottom: 90px;
+        }
+
+        .btn {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            transition: .5s;
+        }
+
+        .btn-primary {
+            color: var(--dark);
+        }
+
+        .btn-square {
+            width: 36px;
+            height: 36px;
+        }
+
+        .btn-sm-square {
+            width: 28px;
+            height: 28px;
+        }
+
+        .btn-lg-square {
+            width: 46px;
+            height: 46px;
+        }
+
+        .btn-square,
+        .btn-sm-square,
+        .btn-lg-square {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        .back-to-top {
+            position: fixed;
+            display: none;
+            right: 45px;
+            bottom: 45px;
+            z-index: 99;
+        }
+
+        .top-shape::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 100%;
+            top: 0;
+            left: -17px;
+            background: var(--primary);
+            transform: skew(40deg);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            font-family: 'Barlow', sans-serif;
+            padding: 35px 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: var(--dark);
+            outline: none;
+            transition: .5s;
+        }
+
+        .navbar-brand h1 {
+            color: #000000 !important;
+        }
+
+        .sticky-top.navbar-light .navbar-nav .nav-link {
+            padding: 20px 15px;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: #f4c482;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-light .navbar-nav .nav-link  {
+                padding: 10px 0;
+            }
+        }
+
+        .carousel-caption {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(21, 36, 64, .7);
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            .carousel-caption h5 {
+                font-size: 14px;
+                font-weight: 500 !important;
+            }
+
+            .carousel-caption h1 {
+                font-size: 30px;
+                font-weight: 600 !important;
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .service-item {
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+
+        .service-item::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 50px;
+            bottom: -50px;
+            left: 0;
+            background: var(--light);
+            border-radius: 100% 100% 0 0;
+            box-shadow: 0px -10px 5px #EEEEEE;
+            transition: .5s;
+        }
+
+        .service-item:hover::after {
+            bottom: -25px;
+        }
+
+        .service-item p {
+            transition: .3s;
+        }
+
+        .service-item:hover p {
+            margin-bottom: 25px !important;
+        }
+
+        .team-item img {
+            transform: scale(1.15);
+            margin-left: -30px;
+            transition: .5s;
+        }
+
+        .team-item:hover img {
+            margin-left: 0;
+        }
+
+        .team-item .team-text {
+            left: -100%;
+            transition: .5s;
+        }
+
+        .team-item .team-text::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            top: 50%;
+            right: -60px;
+            margin-top: -30px;
+            border: 30px solid;
+            border-color: transparent transparent transparent var(--primary);
+        }
+
+        .team-item:hover .team-text {
+            left: 0;
+        }
+
+        .testimonial-carousel .owl-nav {
+            margin-top: 30px;
+            display: flex;
+            justify-content: start;
+        }
+
+        .testimonial-carousel .owl-nav .owl-prev,
+        .testimonial-carousel .owl-nav .owl-next{
+            position: relative;
+            margin: 0 5px;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            background: var(--primary);
+            font-size: 22px;
+            border-radius: 45px;
+            transition: .5s;
+        }
+
+        .testimonial-carousel .owl-nav .owl-prev:hover,
+        .testimonial-carousel .owl-nav .owl-next:hover {
+            color: var(--dark);
+        }
+
+        .testimonial-carousel .owl-item img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .blog-item img {
+            transition: .5s;
+        }
+
+        .blog-item:hover img {
+            transform: scale(1.1);
+        }
+        .text-primary {
+             color: #000 !important;
+        }
+
     </style>
-  </head>
-  <body>
-    <p class="maintenance">Please stay tuned! We are currently under maintenance.</p>
-    <div class="header">
-      <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/Evorise%20Consulting%20-%20Company%20Profile.png" alt="Evorise Logo">
-      <h1>Evorise Consulting</h1>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body py-2 pe-3 border-end" href="#"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Support</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="#"><small>Policy</small></a>
+                    <a class="text-body py-2 ps-3" href="#"><small>Career</small></a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-dark top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>solusi@evorise-consulting.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>(+62) 811-3113-8927</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <p class="subtitle">We offer specialized strategies to drive growth and impact in these areas, helping businesses adopt eco-friendly practices, promote responsible governance, inclusivity, and impact-driven innovation. Our expertise ensures businesses enhance their impact while achieving sustainable growth for the long term.</p>
-    <p class="cta">Transform challenges into impactful strategy with us!</p>
-    <p class="contact">Reach us through <a href="mailto:solusi@evorise-consulting.com">solusi@evorise-consulting.com</a></p>
-    <p class="footer">&copy; PT Evorise Strategi Lestari | Yogyakarta, Indonesia</p>
-  </body>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+            <img src="https://github.com/evorise-consulting/evorise/raw/main/Evorise%20Consulting%20-%20Company%20Profile.png" alt="Evorise Logo" style="height: 40px; margin-right: 10px;">
+            <h1 class="m-0 text-uppercase text-primary">EVORISE CONSULTING</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 me-n3">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Service</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#blog" class="dropdown-item">Blog Grid</a>
+                        <a href="#features" class="dropdown-item">Features</a>
+                        <a href="#quote" class="dropdown-item">Quote Form</a>
+                        <a href="#team" class="dropdown-item">The Team</a>
+                        <a href="#testimonial" class="dropdown-item">Testimonial</a>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=Evorise+Consulting" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Impact Assessments</h5>
+                            <h1 class="display-1 text-white mb-md-4">Let us measure and recommend impact scale-up strategy</h1>
+                            <a href="https://wa.me/6281131138927" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Let's Discuss!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=Strategic+Growth" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase">Systemic Change</h5>
+                            <h1 class="display-1 text-white mb-md-4">Supporting your initiatives reaching sustainable change</h1>
+                            <a href="https://wa.me/6281131138927" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Let's Discuss!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-secondary p-0" id="about">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Welcome To <span class="text-primary">Evorise Consulting</span></h1>
+                <h4 class="text-primary mb-4">We are a team of passionate consultants dedicated to supporting your initiatives create sustainable impact.</h4>
+                <p class="mb-4">Evorise Consulting is an impact-focused consulting firm committed to helping organizations turn visions into meaningful, measurable actions. We specialize in strategy, research, sustainability, and inclusive development—supporting partners to create both social transformation and systemic change.</p>
+                <a href="#quote" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Let's Discuss!</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                    <div class="d-flex text-dark mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-cogs fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>International Development Consulting</h3>
+                            <p class="mb-0">Designing inclusive and sustainable Market Systems Development (MSD) programs</p>
+                        </div>
+                    </div>
+                    <div class="d-flex text-dark mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-tasks fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Impact Assessment and MEL System Development</h3>
+                            <p class="mb-0">Designing baseline, midline, to endline assessments while strengthening Monitoring, Evaluation, and Learning (MEL) systems</p>
+                        </div>
+                    </div>
+                    <div class="d-flex text-dark mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-handshake fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Partnership Facilitation</h3>
+                            <p class="mb-0">Facilitating multi-stakeholder strategic partnerships that connect shared values with shared goals</p>
+                        </div>
+                    </div>
+                     <div class="d-flex text-dark">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-lightbulb fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Impact Intelligence</h3>
+                            <p class="mb-0">Providing insights on impact and sustainability, including market analysis and impact business intelligence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-6 px-5" id="services">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Our Values</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-check-circle fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Quality</strong> in execution</h3>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-expand-arrows-alt fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Scalability</strong> in approach</h3>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-users fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Inclusion</strong> in design</h3>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-dollar-sign fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Cost-effective</strong> in solutions</h3>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-leaf fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Sustainability</strong> in impact</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid py-6 px-5" id="features">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Why Choose Us?</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-cubes fs-4 text-dark"></i>
+                        </div>
+                        <h3>Best In Sector</h3>
+                        <p class="mb-0">Our consultants have deep expertise with a proven track record of delivering exceptional results</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-percent fs-4 text-dark"></i>
+                        </div>
+                        <h3>Success Rate</h3>
+                        <p class="mb-0">We pride ourselves on a high success rate, turning challenges into systemic change opportunities</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award fs-4 text-dark"></i>
+                        </div>
+                        <h3>Recognition</h3>
+                        <p class="mb-0">Recognized for our innovative solutions and commitment to quality insights</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-block bg-primary h-100 text-center">
+                    <img class="img-fluid" src="https://placehold.co/600x800/FFFFFF/152440?text=Excellence" alt="">
+                    <div class="p-4">
+                        <p class="text-dark mb-4">Our approach combines deep knowledge with a collaborative spirit. We don't just provide recommendations; we work with you to implement them and ensure they deliver tangible value. Your success is our ultimate goal.</p>
+                        <a href="#about" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="far fa-smile-beam fs-4 text-dark"></i>
+                        </div>
+                        <h3>Happy Client</h3>
+                        <p class="mb-0">Client satisfaction is at the core of our business. We strive to exceed expectations in every engagement</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-user-tie fs-4 text-dark"></i>
+                        </div>
+                        <h3>Professional Advisors</h3>
+                        <p class="mb-0">Our team of professional advisors brings a wealth of experience and expertise to your projects</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-headset fs-4 text-dark"></i>
+                        </div>
+                        <h3>Excellent Customer Support</h3>
+                        <p class="mb-0">We are always here for you. Our support team is available to address your concerns promptly</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features Start -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-secondary px-0" id="quote">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Schedule a Discussion</h1>
+                <p class="mb-4">Ready to take your projects to the next level? Fill out the form below for a free, no-obligation inquiries. Let us show you how Evorise Consulting can make a difference for your initiative. We look forward to hearing from you.</p>
+                <form>
+                    <div class="row gx-3">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
+                                <label for="form-floating-1">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <label for="form-floating-2">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
+                                    <option selected>Financial Consultancy</option>
+                                    <option value="1">Strategy Consultancy</option>
+                                    <option value="2">Tax Consultancy</option>
+                                </select>
+                                <label for="floatingSelect">Select A Service</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-primary w-100 h-100" type="submit">Let's Discuss!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="https://placehold.co/800x600/152440/FFFFFF?text=Let+us+Discuss" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-6 px-5" id="team">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Our Team Members</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Zulka" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Zulka Nasution</h3>
+                        <p class="text-dark text-uppercase mb-0">MEL Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Yudo" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Yudo Bramantyo</h3>
+                        <p class="text-dark text-uppercase mb-0">Agriculture Value Chain Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Azka" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Syaroful Azka</h3>
+                        <p class="text-dark text-uppercase mb-0">Business Development and Sustainability Consultant</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Tamar" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Tamar Naomi</h3>
+                        <p class="text-dark text-uppercase mb-0">Gender Equality and Social Inclusion Consultant</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Yuhda" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Yuhda Wahyu Pradana</h3>
+                        <p class="text-dark text-uppercase mb-0">Consumer Behavior and Market Research Consultant</p>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Mulki" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Mulki Shader</h3>
+                        <p class="text-dark text-uppercase mb-0">Agrarian Law and Policy Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Burhan" alt="">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-dark">Muhamad Burhanudin</h3>
+                        <p class="text-dark text-uppercase mb-0">Environment and Blue Economy Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid bg-secondary p-0" id="testimonial">
+        <div class="row g-0">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="https://placehold.co/800x700/152440/FFFFFF?text=Testimonials" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">What Our Clients Say!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item">
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Working with Evorise was a game-changer for our company. Their insights and strategic guidance were invaluable. We saw a significant increase in our impact within the first six months.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid rounded-circle" src="https://placehold.co/90x90/f4c482/333333?text=M" alt="">
+                            <div class="ps-4">
+                                <h3>Maria</h3>
+                                <span class="text-uppercase">Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>The team at Evorise is incredibly professional and knowledgeable. They took the time to understand our project and delivered a customized solution that exceeded our expectations.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid rounded-circle" src="https://placehold.co/90x90/f4c482/333333?text=K" alt="">
+                            <div class="ps-4">
+                                <h3>Kuncoro</h3>
+                                <span class="text-uppercase">MEL Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-6 px-5" id="blog">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Latest From Our Blog</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+1" alt="">
+                    </div>
+                    <div class="bg-secondary d-flex">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-4">
+                            <span>23</span>
+                            <h5 class="text-uppercase m-0">Jun</h5>
+                            <span>2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Strategy</small>
+                            </div>
+                            <a class="h4" href="#">The Future of International Development Industry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+2" alt="">
+                    </div>
+                    <div class="bg-secondary d-flex">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-4">
+                            <span>15</span>
+                            <h5 class="text-uppercase m-0">Jun</h5>
+                            <span>2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Finance</small>
+                            </div>
+                            <a class="h4" href="#">Navigating Noise of the Rural Socioeconomic Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+3" alt="">
+                    </div>
+                    <div class="bg-secondary d-flex">
+                        <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-4">
+                            <span>05</span>
+                            <h5 class="text-uppercase m-0">Jun</h5>
+                            <span>2025</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center py-3 px-4">
+                            <div class="d-flex mb-2">
+                                <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Tech</small>
+                            </div>
+                            <a class="h4" href="#">Leveraging AI in Monitoring and Evaluation Processes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-dark p-5" id="contact">
+        <div class="row g-5">
+            <div class="col-12 text-center">
+                <h1 class="display-5 mb-4">Stay Updated!</h1>
+                <form class="mx-auto" style="max-width: 600px;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                        <button class="btn btn-dark px-4">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#home"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="#about"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="#services"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="#blog"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                    <a class="text-secondary" href="#contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Popular Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Careers</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Privacy Policy</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Terms & Conditions</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>FAQs</a>
+                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Support</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Medari Cilik RT3/RW17, Sleman Yogyakarta</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>solusi@evorise-consulting.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>(+62) 811-3113-8927</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.linkedin.com/company/evorise-consulting"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.instagram.com/evorise.consulting/"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Evorise Consulting</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        (function ($) {
+            "use strict";
+
+            // Sticky Navbar
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 40) {
+                    $('.navbar').addClass('sticky-top');
+                } else {
+                    $('.navbar').removeClass('sticky-top');
+                }
+            });
+            
+            // Dropdown on mouse hover
+            $(document).ready(function () {
+                function toggleNavbarMethod() {
+                    if ($(window).width() > 992) {
+                        $('.navbar .dropdown').on('mouseover', function () {
+                            $('.dropdown-toggle', this).trigger('click');
+                        }).on('mouseout', function () {
+                            $('.dropdown-toggle', this).trigger('click').blur();
+                        });
+                    } else {
+                        $('.navbar .dropdown').off('mouseover').off('mouseout');
+                    }
+                }
+                toggleNavbarMethod();
+                $(window).resize(toggleNavbarMethod);
+            });
+            
+            
+            // Back to top button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn('slow');
+                } else {
+                    $('.back-to-top').fadeOut('slow');
+                }
+            });
+            $('.back-to-top').click(function () {
+                $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+                return false;
+            });
+
+
+            // Testimonials carousel
+            $(".testimonial-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                items: 1,
+                dots: false,
+                loop: true,
+                nav : true,
+                navText : [
+                    '<i class="bi bi-arrow-left"></i>',
+                    '<i class="bi bi-arrow-right"></i>'
+                ],
+            });
+            
+        })(jQuery);
+    </script>
+</body>
+
 </html>
