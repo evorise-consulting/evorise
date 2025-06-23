@@ -221,36 +221,23 @@
         .service-item:hover p {
             margin-bottom: 25px !important;
         }
-
-        .team-item img {
-            transform: scale(1.15);
-            margin-left: -30px;
-            transition: .5s;
+        
+        .team-item {
+            background: var(--secondary);
+            padding: 25px;
+            border-radius: .25rem;
+            text-align: center;
         }
-
-        .team-item:hover img {
-            margin-left: 0;
+        
+        .team-item h5 a {
+            color: var(--dark);
+            font-size: 1rem;
+            margin-left: 8px;
+            opacity: 0.6;
         }
-
-        .team-item .team-text {
-            left: -100%;
-            transition: .5s;
-        }
-
-        .team-item .team-text::after {
-            position: absolute;
-            content: "";
-            width: 0;
-            height: 0;
-            top: 50%;
-            right: -60px;
-            margin-top: -30px;
-            border: 30px solid;
-            border-color: transparent transparent transparent var(--primary);
-        }
-
-        .team-item:hover .team-text {
-            left: 0;
+        
+        .team-item h5 a:hover {
+            opacity: 1;
         }
 
         .testimonial-carousel .owl-nav {
@@ -363,7 +350,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=Evorise+Consulting" alt="Image">
+                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=_" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Impact Assessments</h5>
@@ -373,7 +360,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=Strategic+Growth" alt="Image">
+                    <img class="w-100" src="https://placehold.co/1920x1080/152440/FFFFFF?text=_" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase">Systemic Change</h5>
@@ -572,32 +559,36 @@
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Schedule a Discussion</h1>
                 <p class="mb-4">Ready to take your projects to the next level? Fill out the form below for a free, no-obligation inquiries. Let us show you how Evorise Consulting can make a difference for your initiative. We look forward to hearing from you.</p>
-                <form>
+                <form id="contactForm">
                     <div class="row gx-3">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder=" " name="entry.YOUR_NAME_ID">
+                                <label for="name">Name</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder=" " name="entry.YOUR_EMAIL_ID">
+                                <label for="email">Email address</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
-                                    <option selected>Financial Consultancy</option>
-                                    <option value="1">Strategy Consultancy</option>
-                                    <option value="2">Tax Consultancy</option>
+                                <select class="form-select" id="service" name="entry.YOUR_SERVICE_ID">
+                                    <option selected>Impact Assessment</option>
+                                    <option value="MSD Consultancy">MSD Consultancy</option>
+                                    <option value="Impact Intelligence">Impact Intelligence</option>
+                                    <option value="Partnership Facilitation">Partnership Facilitation</option>
                                 </select>
-                                <label for="floatingSelect">Select A Service</label>
+                                <label for="service">Select a Service</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <button class="btn btn-primary w-100 h-100" type="submit">Let's Discuss!</button>
+                        </div>
+                         <div class="col-12 mt-3">
+                            <p id="form-message" class="text-center"></p>
                         </div>
                     </div>
                 </form>
@@ -618,68 +609,54 @@
             <h1 class="display-5 mb-0">Our Team Members</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
-        <div class="row g-5">
+        <div class="row g-5 justify-content-center">
             <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Zulka" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Zulka Nasution</h3>
-                        <p class="text-dark text-uppercase mb-0">MEL Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Zulka" alt="Zulka Nasution">
+                    <h5 class="mb-1">Zulka Nasution <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Monitoring, Evaluation & Learning Consultant</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Yudo" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Yudo Bramantyo</h3>
-                        <p class="text-dark text-uppercase mb-0">Agriculture Value Chain Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Yudo" alt="Yudo Bramantyo">
+                    <h5 class="mb-1">Yudo Bramantyo <a href="https://www.linkedin.com/in/dimasyudobramantyo/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Agriculture Value Chain Consultant</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Azka" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Syaroful Azka</h3>
-                        <p class="text-dark text-uppercase mb-0">Business Development and Sustainability Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Azka" alt="Syaroful Azka">
+                    <h5 class="mb-1">Syaroful Azka <a href="https://www.linkedin.com/in/syarofulazka/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Business Development and Sustainability Consultant</p>
                 </div>
             </div>
              <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Tamar" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Tamar Naomi</h3>
-                        <p class="text-dark text-uppercase mb-0">Gender Equality and Social Inclusion Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Tamar" alt="Tamar Naomi">
+                    <h5 class="mb-1">Tamar Naomi <a href="https://www.linkedin.com/in/tamar-naomi/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Gender Equality and Social Inclusion Consultant</p>
                 </div>
             </div>
              <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Yuhda" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Yuhda Wahyu Pradana</h3>
-                        <p class="text-dark text-uppercase mb-0">Consumer Behavior and Market Research Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Yuhda" alt="Yuhda Wahyu Pradana">
+                    <h5 class="mb-1">Yuhda Wahyu Pradana <a href="https://www.linkedin.com/in/yuhdawahyupradana/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Consumer Behavior and Market Research Consultant</p>
                 </div>
             </div>
              <div class="col-lg-4 col-md-6">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Mulki" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Mulki Shader</h3>
-                        <p class="text-dark text-uppercase mb-0">Agrarian Law and Policy Consultant</p>
-                    </div>
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Mulki" alt="Mulki Shader">
+                    <h5 class="mb-1">Mulki Shader <a href="https://www.linkedin.com/in/mulki-shader-725742a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Agrarian Law and Policy Development Consultant</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 offset-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="https://placehold.co/500x700/dddddd/333333?text=Burhan" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-dark">Muhamad Burhanudin</h3>
-                        <p class="text-dark text-uppercase mb-0">Environment and Blue Economy Consultant</p>
-                    </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://placehold.co/150x150/dddddd/333333?text=Burhan" alt="Muhamad Burhanudin">
+                    <h5 class="mb-1">Muhamad Burhanudin <a href="https://www.linkedin.com/in/muhamadburhanudin/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Environment and Blue Economy Consultant</p>
                 </div>
             </div>
         </div>
@@ -802,10 +779,10 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-dark p-5" id="contact">
-        <div class="row g-5">
-            <div class="col-12 text-center">
+        <div class="row g-5 justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
                 <h1 class="display-5 mb-4">Stay Updated!</h1>
-                <form class="mx-auto" style="max-width: 600px;">
+                <form>
                     <div class="input-group">
                         <input type="text" class="form-control border-white p-3" placeholder="Your Email">
                         <button class="btn btn-dark px-4">Sign Up</button>
@@ -838,7 +815,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Medari Cilik RT3/RW17, Sleman Yogyakarta</p>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Medari Cilik, Sleman Yogyakarta</p>
                 <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>solusi@evorise-consulting.com</p>
                 <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>(+62) 811-3113-8927</p>
             </div>
@@ -852,7 +829,7 @@
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Evorise Consulting</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">2025 Evorise Consulting</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://www.linkedin.com/in/ahmad-munjin/">The Peak</a></p>
     </div>
     <!-- Footer End -->
 
@@ -928,6 +905,31 @@
                 ],
             });
             
+            // Google Form Submission
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('form-message');
+
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const formData = new FormData(contactForm);
+                const googleFormUrl = 'YOUR_GOOGLE_FORM_ACTION_URL_HERE'; // <-- Replace with your form's action URL
+
+                fetch(googleFormUrl, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors' // Important: This prevents CORS errors
+                }).then(response => {
+                    contactForm.reset();
+                    formMessage.style.color = 'green';
+                    formMessage.textContent = 'Thank you! Your message has been sent.';
+                }).catch(error => {
+                    formMessage.style.color = 'red';
+                    formMessage.textContent = 'Oops! There was a problem submitting your form.';
+                    console.error('Error:', error);
+                });
+            });
+
         })(jQuery);
     </script>
 </body>
