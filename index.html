@@ -309,6 +309,8 @@
             /* Hide scrollbar for aesthetics, but allow scroll functionality */
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
+            /* EDITED: Centering logos when container is not full */
+            justify-content: center; 
         }
         .partners-logo-container::-webkit-scrollbar {
             display: none; /* Chrome, Safari, Opera */
@@ -383,9 +385,12 @@
         .partner-nav-next {
             right: 0;
         }
-
+        
+        /* EDITED: Blog thumbnail size */
         .blog-item img {
             transition: .5s;
+            height: 180px; /* Reduced vertical size for thumbnails */
+            object-fit: cover;
         }
 
         .blog-item:hover img {
@@ -765,7 +770,7 @@
                         <i class="bi bi-chevron-right"></i>
                     </button>
                     
-                    <!-- Container for horizontal, scrollable logos -->
+                    <!-- EDITED: Centering is handled in CSS (justify-content: center on partners-logo-container) -->
                     <div id="partners-scroll-container" class="partners-logo-container justify-content-start">
                         
                         <!-- Partner Logo 1: WWF -->
@@ -794,7 +799,7 @@
     <!-- START: Simplified Discussion Link Section (CTA MOVED HERE) -->
     <div class="container-fluid bg-primary px-0" id="discussion">
         <div class="row g-0 justify-content-center">
-            <div class="col-lg-12 px-5 text-center" style="padding-top: 7rem; padding-bottom: 7rem;">
+            <div class="col-lg-12 px-5 text-center" style="padding-top: 6rem; padding-bottom: 6rem;">
                 <h2 class="display-5 mb-4 text-dark">Ready to Discuss Your Project?</h2>
                 <p class="mb-4 text-dark">Click below to reach our dedicated consultation page and submit your inquiry.</p>
                 <a href="contact-form.html" class="btn btn-dark py-md-3 px-md-5 rounded-pill fw-bold" target="_blank">Contact Our Team!</a>
