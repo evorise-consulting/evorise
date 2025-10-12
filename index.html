@@ -231,11 +231,18 @@
             margin-bottom: 25px !important;
         }
         
+        /* TEAM MEMBER STYLE UPDATE */
         .team-item {
             background: var(--secondary);
             padding: 25px;
             border-radius: .25rem;
             text-align: center;
+            /* Enforce minimum height for uniformity */
+            min-height: 250px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content fills space */
+            align-items: center;
         }
         
         .team-item h5 a {
@@ -433,7 +440,7 @@
             <div class="navbar-nav ms-auto py-0 me-n3">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#about" class="nav-item nav-link">Service</a>
+                <a href="#services" class="nav-item nav-link">Service</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Company</a>
                     <div class="dropdown-menu m-0">
@@ -546,19 +553,6 @@
     </div>
     <!-- About End -->
     
-    <!-- START: Simplified Discussion Link Section (Replacing Quote Start Form) -->
-    <div class="container-fluid bg-primary px-0" id="discussion">
-        <div class="row g-0 justify-content-center">
-            <div class="col-lg-12 py-5 px-5 text-center">
-                <h2 class="display-5 mb-4 text-dark">Ready to Discuss Your Project?</h2>
-                <p class="mb-4 text-dark">Click below to reach our dedicated consultation page and submit your inquiry.</p>
-                <a href="contact-form.html" class="btn btn-dark py-md-3 px-md-5 rounded-pill fw-bold" target="_blank">Contact Our Team!</a>
-            </div>
-        </div>
-    </div>
-    <!-- END: Simplified Discussion Link Section -->
-
-
     <!-- Services Start -->
     <div class="container-fluid pt-6 px-5" id="services">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
@@ -705,14 +699,16 @@
             <!-- New Members (Moved to Row 2) -->
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://github.com/evorise-consulting/evorise/blob/main/images/Saffanah.jpg" alt="Saffanah Gumilangsari">
+                    <!-- UPDATED TO RAW CONTENT LINK -->
+                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Saffanah.jpg" alt="Saffanah Gumilangsari">
                     <h5 class="mb-1">Saffanah Gumilangsari <a href="https://www.linkedin.com/in/saffanah-gumilangsari-41b115126/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
                     <p class="text-uppercase mb-0">WASTE MANAGEMENT CONSULTANT</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://github.com/evorise-consulting/evorise/blob/main/images/Adha%20Kholif.jpg" alt="Adha Nur Kholif">
+                    <!-- UPDATED TO RAW CONTENT LINK -->
+                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Adha%20Kholif.jpg" alt="Adha Nur Kholif">
                     <h5 class="mb-1">Adha Nur Kholif <a href="https://www.linkedin.com/in/adhakholif/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
                     <p class="text-uppercase mb-0">WASTE MANAGEMENT CONSULTANT</p>
                 </div>
@@ -774,33 +770,38 @@
                         
                         <!-- Partner Logo 1: WWF -->
                         <div class="partner-logo-item">
-                             <img src="https://github.com/evorise-consulting/evorise/blob/main/clients/WWF.jpg" alt="WWF Logo">
+                             <!-- UPDATED TO RAW CONTENT LINK -->
+                             <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/WWF.jpg" alt="WWF Logo">
                         </div>
                         <!-- Partner Logo 2: YKAN -->
                         <div class="partner-logo-item">
-                             <img src="https://github.com/evorise-consulting/evorise/blob/main/clients/YKAN.jpg" alt="YKAN Logo">
+                             <!-- UPDATED TO RAW CONTENT LINK -->
+                             <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/YKAN.jpg" alt="YKAN Logo">
                         </div>
                         <!-- Partner Logo 3: Humanis -->
                         <div class="partner-logo-item">
-                            <img src="https://github.com/evorise-consulting/evorise/blob/main/clients/humanis.jpg" alt="Humanis Logo">
+                            <!-- UPDATED TO RAW CONTENT LINK -->
+                            <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/humanis.jpg" alt="Humanis Logo">
                         </div>
-
-                        <!-- Placeholder for future partners to demonstrate scrolling -->
-                         <div class="partner-logo-item">
-                            <img src="https://placehold.co/180x60/f4c482/152440?text=New+Partner+4" alt="Placeholder Partner 4">
-                        </div>
-                         <div class="partner-logo-item">
-                            <img src="https://placehold.co/180x60/f4c482/152440?text=Future+Client+5" alt="Placeholder Partner 5">
-                        </div>
-                        <div class="partner-logo-item">
-                            <img src="https://placehold.co/180x60/f4c482/152440?text=Next+Partner+6" alt="Placeholder Partner 6">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- END: Our Partners Section -->
+
+    <!-- START: Simplified Discussion Link Section (CTA MOVED HERE) -->
+    <div class="container-fluid bg-primary px-0" id="discussion">
+        <div class="row g-0 justify-content-center">
+            <div class="col-lg-12 px-5 text-center" style="padding-top: 7rem; padding-bottom: 7rem;">
+                <h2 class="display-5 mb-4 text-dark">Ready to Discuss Your Project?</h2>
+                <p class="mb-4 text-dark">Click below to reach our dedicated consultation page and submit your inquiry.</p>
+                <a href="contact-form.html" class="btn btn-dark py-md-3 px-md-5 rounded-pill fw-bold" target="_blank">Contact Our Team!</a>
+            </div>
+        </div>
+    </div>
+    <!-- END: Simplified Discussion Link Section -->
 
 
     <!-- Blog Start -->
@@ -813,7 +814,10 @@
             <div class="col-lg-4 mb-4">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
-                        <a href="blog-1.html"><img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+1" alt=""></a>
+                        <a href="blog-1.html">
+                            <!-- UPDATED BLOG THUMBNAIL (Strategy) -->
+                            <img class="img-fluid" src="https://placehold.co/600x400/556B2F/ffffff?text=Strategy+and+Future" alt="Blog Thumbnail for Strategy">
+                        </a>
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-3 py-2">
@@ -834,7 +838,10 @@
             <div class="col-lg-4 mb-4">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
-                        <a href="blog-2.html"><img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+2" alt=""></a>
+                        <a href="blog-2.html">
+                             <!-- UPDATED BLOG THUMBNAIL (Finance) -->
+                            <img class="img-fluid" src="https://placehold.co/600x400/008080/ffffff?text=Data+and+Finance" alt="Blog Thumbnail for Finance">
+                        </a>
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-3 py-2">
@@ -855,7 +862,10 @@
             <div class="col-lg-4 mb-4">
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
-                        <a href="blog-3.html"><img class="img-fluid" src="https://placehold.co/600x400/dddddd/333333?text=Blog+3" alt=""></a>
+                        <a href="blog-3.html">
+                             <!-- UPDATED BLOG THUMBNAIL (Tech) -->
+                            <img class="img-fluid" src="https://placehold.co/600x400/4682B4/ffffff?text=Leveraging+AI+Tech" alt="Blog Thumbnail for Tech">
+                        </a>
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-dark px-3 py-2">
