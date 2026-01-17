@@ -237,11 +237,10 @@
             padding: 25px;
             border-radius: .25rem;
             text-align: center;
-            /* Enforce minimum height for uniformity */
-            min-height: 250px; 
+            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensures content fills space */
+            justify-content: flex-start; 
             align-items: center;
         }
         
@@ -259,7 +258,7 @@
         .testimonial-carousel .owl-nav {
             margin-top: 30px;
             display: flex;
-            justify-content: start;
+            justify(content): start;
         }
 
         .testimonial-carousel .owl-nav .owl-prev,
@@ -288,32 +287,23 @@
             height: 90px;
         }
         
-        /* New styles for the scrollable partners section */
+        /* New styles for the static partners section */
         #partners {
-            position: relative; /* Container needs to be relative for absolute positioning of buttons */
+            position: relative;
         }
         
         .partners-logo-wrapper {
-            position: relative; /* Wrapper for the partners container */
-            padding: 0 40px; /* Space for the navigation buttons */
+            position: relative;
+            padding: 0;
         }
 
         .partners-logo-container {
             display: flex;
-            flex-wrap: nowrap; /* Forces items onto a single line */
-            overflow-x: auto; /* Enables horizontal scrolling */
-            scroll-behavior: smooth; /* For smooth scrolling triggered by buttons */
-            -webkit-overflow-scrolling: touch; /* Improved scrolling on iOS */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             padding: 20px 0; 
-            gap: 20px; /* Space between logo items */
-            /* Hide scrollbar for aesthetics, but allow scroll functionality */
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
-            /* EDITED: Centering logos when container is not full */
-            justify-content: center; 
-        }
-        .partners-logo-container::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
+            gap: 40px;
         }
 
         .partner-logo-item {
@@ -326,24 +316,21 @@
             justify-content: center;
             min-height: 150px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            /* Important for horizontal scroll: ensure items don't shrink */
             flex-shrink: 0; 
-            width: 250px; /* Adjusted minimum width for smaller logos */
+            width: 250px;
             max-width: 250px; 
-            margin-right: 0; /* Remove unnecessary margin if using gap */
         }
 
-        /* Adjust sizing for mobile devices if necessary to show multiple at once */
         @media (max-width: 767px) {
             .partner-logo-item {
-                width: 60vw; /* Take up 60% of viewport width on small screens */
-                max-width: 60vw;
+                width: 40vw;
+                max-width: 200px;
             }
         }
 
         .partner-logo-item img {
             max-width: 100%;
-            max-height: 70px; /* Constrain height for uniform look */
+            max-height: 70px;
             width: auto;
             opacity: 0.8;
             transition: 0.3s;
@@ -353,44 +340,12 @@
             opacity: 1;
         }
         
-        /* Navigation Button Styling */
-        .partner-nav-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            color: var(--dark);
-            border: none;
-            border-radius: 50%;
-            font-size: 1.25rem;
-            cursor: pointer;
-            z-index: 10;
-            transition: background 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .partner-nav-btn:hover {
-            background: var(--dark);
-            color: var(--light);
-        }
-
-        .partner-nav-prev {
-            left: 0;
-        }
-
-        .partner-nav-next {
-            right: 0;
-        }
-        
-        /* EDITED: Blog thumbnail size */
+        /* Blog thumbnail size */
         .blog-item img {
             transition: .5s;
-            height: 180px; /* Reduced vertical size for thumbnails */
+            height: 180px; 
             object-fit: cover;
+            width: 100%;
         }
 
         .blog-item:hover img {
@@ -413,7 +368,6 @@
                     <a class="text-body py-2 px-3 border-end" href="support.html"><small>Support</small></a>
                     <a class="text-body py-2 px-3 border-end" href="privacy.html"><small>Privacy</small></a>
                     <a class="text-body py-2 px-3 border-end" href="policy.html"><small>Policy</small></a>
-                    <!-- CAREER LINK UPDATED -->
                     <a class="text-body py-2 ps-3" href="http://recruitment.evorise-consulting.com" target="_blank"><small>Career</small></a>
                 </div>
             </div>
@@ -468,7 +422,6 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <!-- Updated with a professional consulting/strategy image -->
                     <img class="w-100" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop" alt="Impact Assessment">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -479,7 +432,6 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- Updated with a nature/sustainability image -->
                     <img class="w-100" src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1920&auto=format&fit=crop" alt="Sustainable Change">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -512,9 +464,7 @@
                 <h1 class="display-5 mb-4">Welcome To <span class="text-primary">Evorise Consulting</span></h1>
                 <h4 class="text-primary mb-4">We are a team of passionate consultants dedicated to supporting your initiatives create sustainable impact.</h4>
                 <p class="mb-4">Evorise Consulting is an impact-focused consulting firm committed to helping organizations turn visions into meaningful, measurable actions. We specialize in strategy, research, sustainability, and inclusive development—supporting partners to create both social transformation and systemic change.</p>
-                <!-- START: Simplified Discussion Button Section -->
                 <a href="#discussion" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Let's Discuss!</a>
-                <!-- END: Simplified Discussion Button Section -->
             </div>
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
@@ -560,14 +510,14 @@
     </div>
     <!-- About End -->
     
-    <!-- Services Start -->
+    <!-- Values Start -->
     <div class="container-fluid pt-6 px-5" id="services">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 mb-0">Our Values</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5 justify-content-center">
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-check-circle fa-2x"></i>
@@ -575,7 +525,15 @@
                     <h3 class="mb-3"><strong>Quality</strong> in execution</h3>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-secondary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-chart-line fa-2x"></i>
+                    </div>
+                    <h3 class="mb-3"><strong>Scientific Rigor</strong> in research</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-expand-arrows-alt fa-2x"></i>
@@ -583,7 +541,7 @@
                     <h3 class="mb-3"><strong>Scalability</strong> in approach</h3>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-users fa-2x"></i>
@@ -591,7 +549,7 @@
                     <h3 class="mb-3"><strong>Inclusion</strong> in design</h3>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-dollar-sign fa-2x"></i>
@@ -599,7 +557,7 @@
                     <h3 class="mb-3"><strong>Cost-effective</strong> in solutions</h3>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-dark rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
                         <i class="fa fa-leaf fa-2x"></i>
@@ -609,7 +567,7 @@
             </div>
         </div>
     </div>
-    <!-- Services End -->
+    <!-- Values End -->
 
 
     <!-- Features Start -->
@@ -626,14 +584,7 @@
                             <i class="fa fa-cubes fs-4 text-dark"></i>
                         </div>
                         <h3>Best In Sector</h3>
-                        <p class="mb-0">Our consultants have deep expertise with a proven track record of delivering exceptional results</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-percent fs-4 text-dark"></i>
-                        </div>
-                        <h3>Success Rate</h3>
-                        <p class="mb-0">We pride ourselves on a high success rate, turning challenges into systemic change opportunities</p>
+                        <p class="mb-0">Our experts have deep expertise with a proven track record of delivering exceptional results</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
@@ -641,6 +592,13 @@
                         </div>
                         <h3>Recognition</h3>
                         <p class="mb-0">Recognized for our innovative solutions and commitment to quality insights</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <i class="fa fa-user-tie fs-4 text-dark"></i>
+                        </div>
+                        <h3>Professional Advisors</h3>
+                        <p class="mb-0">Our team of professional advisors brings a wealth of experience and expertise to your projects</p>
                     </div>
                 </div>
             </div>
@@ -652,13 +610,6 @@
                         </div>
                         <h3>Happy Client</h3>
                         <p class="mb-0">Client satisfaction is at the core of our business, we strive to exceed expectations in every engagement</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4 text-dark"></i>
-                        </div>
-                        <h3>Professional Advisors</h3>
-                        <p class="mb-0">Our team of professional advisors brings a wealth of experience and expertise to your projects</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
@@ -677,76 +628,72 @@
     <!-- Team Start -->
     <div class="container-fluid py-6 px-5" id="team">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Our Team Members</h1>
+            <h1 class="display-5 mb-0">Our Experts</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5 justify-content-center">
-            <!-- Existing Members (Row 1) -->
+            <!-- Team members -->
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Zulka%20Nasution.jpg" alt="Zulka Nasution">
                     <h5 class="mb-1">Zulka Nasution <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Monitoring, Evaluation & Learning Consultant</p>
+                    <p class="text-uppercase mb-0">Monitoring, Evaluation & Learning</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Yudo%20Bramantyo.jpg" alt="Yudo Bramantyo">
                     <h5 class="mb-1">Yudo Bramantyo <a href="https://www.linkedin.com/in/dimasyudobramantyo/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Agriculture Value Chain Consultant</p>
+                    <p class="text-uppercase mb-0">Agriculture Value Chain and Technology</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Syaroful%20Azka.jpg" alt="Syaroful Azka">
                     <h5 class="mb-1">Syaroful Azka <a href="https://www.linkedin.com/in/syarofulazka/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Business Development and Sustainability Consultant</p>
+                    <p class="text-uppercase mb-0">MSME Development and ESG Strategy</p>
                 </div>
             </div>
-            <!-- New Members (Moved to Row 2) -->
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <!-- UPDATED TO RAW CONTENT LINK -->
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Saffanah.jpg" alt="Saffanah Gumilangsari">
                     <h5 class="mb-1">Saffanah Gumilangsari <a href="https://www.linkedin.com/in/saffanah-gumilangsari-41b115126/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">WASTE MANAGEMENT CONSULTANT</p>
+                    <p class="text-uppercase mb-0">Waste Management and Environmental Policy</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <!-- UPDATED TO RAW CONTENT LINK -->
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Adha%20Kholif.jpg" alt="Adha Nur Kholif">
                     <h5 class="mb-1">Adha Nur Kholif <a href="https://www.linkedin.com/in/adhakholif/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">WASTE MANAGEMENT CONSULTANT</p>
+                    <p class="text-uppercase mb-0">Waste Management and Environmental Policy</p>
                 </div>
             </div>
-            <!-- Existing Members (Row 2 and 3) -->
-             <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6">
                 <div class="team-item">
-                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Tamar%20Naomi.jpg" alt="Tamar Naomi">
-                    <h5 class="mb-1">Tamar Naomi <a href="https://www.linkedin.com/in/tamar-naomi/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Gender Equality and Social Inclusion Consultant</p>
+                    <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Nadia%20Lingga.jpg" alt="Nadia Lingga">
+                    <h5 class="mb-1">Nadia Lingga <a href="https://www.linkedin.com/in/nadia-putri-lingga/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
+                    <p class="text-uppercase mb-0">Sustainable Agriculture and Finance</p>
                 </div>
             </div>
              <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Yuhda%20Wahyu%20Pradana.jpg" alt="Yuhda Wahyu Pradana">
                     <h5 class="mb-1">Yuhda Wahyu Pradana <a href="https://www.linkedin.com/in/yuhdawahyupradana/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Consumer Behavior and Market Research Consultant</p>
+                    <p class="text-uppercase mb-0">Consumer Insight and Market Research</p>
                 </div>
             </div>
              <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Mulki%20Shader.jpg" alt="Mulki Shader">
                     <h5 class="mb-1">Mulki Shader <a href="https://www.linkedin.com/in/mulki-shader-725742a3/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Agrarian Law and Policy Development Consultant</p>
+                    <p class="text-uppercase mb-0">Agrarian Law and Policy Development</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="team-item">
                     <img class="img-fluid rounded-circle mx-auto mb-4" style="width: 150px; height: 150px; object-fit: cover;" src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/images/Gisi%20Bestari.jpg" alt="Gisi Bestari">
                     <h5 class="mb-1">Gisi Bestari <a href="https://www.linkedin.com/in/gisi-bestari-0a9146b1/" target="_blank"><i class="fab fa-linkedin-in"></i></a></h5>
-                    <p class="text-uppercase mb-0">Nutrition Research Consultant</p>
+                    <p class="text-uppercase mb-0">Health and Nutrition</p>
                 </div>
             </div>
         </div>
@@ -754,7 +701,7 @@
     <!-- Team End -->
 
 
-    <!-- START: Our Partners Section (Replaces Testimonial) -->
+    <!-- START: Our Partners Section (Static Layout) -->
     <div class="container-fluid bg-secondary p-0" id="partners">
         <div class="row g-0 justify-content-center">
              <div class="col-lg-12 py-6 px-5">
@@ -764,33 +711,16 @@
                 </div>
                 
                 <div class="partners-logo-wrapper">
-                    <!-- Navigation Buttons -->
-                    <button class="partner-nav-btn partner-nav-prev" onclick="scrollPartners('prev')">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <button class="partner-nav-btn partner-nav-next" onclick="scrollPartners('next')">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                    
-                    <!-- EDITED: Centering is handled in CSS (justify-content: center on partners-logo-container) -->
-                    <div id="partners-scroll-container" class="partners-logo-container justify-content-start">
-                        
-                        <!-- Partner Logo 1: WWF -->
+                    <div id="partners-static-container" class="partners-logo-container">
                         <div class="partner-logo-item">
-                             <!-- UPDATED TO RAW CONTENT LINK -->
                              <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/WWF.jpg" alt="WWF Logo">
                         </div>
-                        <!-- Partner Logo 2: YKAN -->
                         <div class="partner-logo-item">
-                             <!-- UPDATED TO RAW CONTENT LINK -->
                              <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/YKAN.jpg" alt="YKAN Logo">
                         </div>
-                        <!-- Partner Logo 3: Humanis -->
                         <div class="partner-logo-item">
-                            <!-- UPDATED TO RAW CONTENT LINK -->
                             <img src="https://raw.githubusercontent.com/evorise-consulting/evorise/main/clients/humanis.jpg" alt="Humanis Logo">
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -798,7 +728,7 @@
     </div>
     <!-- END: Our Partners Section -->
 
-    <!-- START: Simplified Discussion Link Section (CTA MOVED HERE) -->
+    <!-- START: Simplified Discussion Link Section -->
     <div class="container-fluid bg-primary px-0" id="discussion">
         <div class="row g-0 justify-content-center">
             <div class="col-lg-12 px-5 text-center" style="padding-top: 6rem; padding-bottom: 6rem;">
@@ -822,8 +752,9 @@
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
                         <a href="blog-1.html">
-                            <!-- UPDATED BLOG THUMBNAIL (Strategy) -->
-                            <img class="img-fluid" src="https://placehold.co/600x400/556B2F/ffffff?text=Strategy+and+Future" alt="Blog Thumbnail for Strategy">
+                            <img class="img-fluid" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop" 
+                                 onerror="this.src='https://placehold.co/600x400/f4c482/152440?text=Inclusive+Global+Team'"
+                                 alt="The Future of International Development Industry">
                         </a>
                     </div>
                     <div class="bg-secondary d-flex">
@@ -846,8 +777,9 @@
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
                         <a href="blog-2.html">
-                             <!-- UPDATED BLOG THUMBNAIL (Finance) -->
-                            <img class="img-fluid" src="https://placehold.co/600x400/008080/ffffff?text=Data+and+Finance" alt="Blog Thumbnail for Finance">
+                            <img class="img-fluid" src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=600&auto=format&fit=crop" 
+                                 onerror="this.src='https://placehold.co/600x400/fce5cb/152440?text=Indonesian+Agriculture'"
+                                 alt="Navigating Noise of the Rural Socioeconomic Data">
                         </a>
                     </div>
                     <div class="bg-secondary d-flex">
@@ -870,8 +802,9 @@
                 <div class="blog-item">
                     <div class="position-relative overflow-hidden">
                         <a href="blog-3.html">
-                             <!-- UPDATED BLOG THUMBNAIL (Tech) -->
-                            <img class="img-fluid" src="https://placehold.co/600x400/4682B4/ffffff?text=Leveraging+AI+Tech" alt="Blog Thumbnail for Tech">
+                            <img class="img-fluid" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop" 
+                                 onerror="this.src='https://placehold.co/600x400/152440/FFFFFF?text=AI+and+Tech'"
+                                 alt="AI and Monitoring">
                         </a>
                     </div>
                     <div class="bg-secondary d-flex">
@@ -901,9 +834,7 @@
             <div class="col-12 col-md-8 col-lg-6 text-center">
                 <h1 class="display-5 mb-4">Join Our Team</h1>
                 <p class="mb-4">We want to hear your ideas.</p>
-                <!-- START: Simplified Join Team Section -->
                 <a href="http://recruitment.evorise-consulting.com" target="_blank" class="btn btn-dark px-4 py-3">View Open Positions</a>
-                <!-- END: Simplified Join Team Section -->
             </div>
         </div>
     </div>
@@ -992,7 +923,6 @@
                 $(window).resize(toggleNavbarMethod);
             });
             
-            
             // Back to top button
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
@@ -1005,40 +935,6 @@
                 $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
                 return false;
             });
-
-
-            // Custom function for horizontal partner scrolling
-            window.scrollPartners = function(direction) {
-                const container = document.getElementById('partners-scroll-container');
-                if (!container) return;
-
-                const scrollAmount = 300; // Adjust how far to scroll per click
-                
-                if (direction === 'next') {
-                    container.scrollLeft += scrollAmount;
-                } else if (direction === 'prev') {
-                    container.scrollLeft -= scrollAmount;
-                }
-            }
-
-
-            // Testimonials carousel (REMOVED, but keeping the library load just in case)
-            // $(".testimonial-carousel").owlCarousel({
-            //     autoplay: true,
-            //     smartSpeed: 1000,
-            //     items: 1,
-            //     dots: false,
-            //     loop: true,
-            //     nav : true,
-            //     navText : [
-            //         '<i class="bi bi-arrow-left"></i>',
-            //         '<i class="bi bi-arrow-right"></i>'
-            //     ],
-            // });
-            
-            // Removed Google Form Submission for Schedule a Discussion
-            
-            // Removed Google Form Submission for Join Our Team
 
         })(jQuery);
     </script>
