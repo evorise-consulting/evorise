@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evorise Consulting — Onboarding Portal</title>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              700: '#1d4ed8',
+              800: '#1e3a8a', // Evorise Deep Blue
+              900: '#1e3a8a',
+            },
+            accent: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b', // Evorise Amber
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom styles for specific components to maintain crispness */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+    }
+    .check-custom {
+      accent-color: #1e3a8a;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased selection:bg-brand-100 selection:text-brand-900">
+
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex flex-wrap items-center gap-4 md:gap-6">
+    <div class="font-extrabold text-brand-800 text-lg tracking-wider">EVORISE.</div>
+    <div class="hidden md:block w-px h-5 bg-gray-300"></div>
+    <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium">
+      <a href="#budaya" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">1. Budaya & Bisnis</a>
+      <a href="#peran-po" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">2. Peran PO</a>
+      <a href="#mel" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">3. MEL</a>
+      <a href="#msd" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">4. MSD & VCA</a>
+      <a href="#gedsi" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">5. GEDSI & Proposal</a>
+      <a href="#sop" class="text-gray-500 hover:text-brand-700 hover:bg-brand-50 px-2 py-1 rounded transition-colors">6. SOP & Roadmap</a>
+    </div>
+  </div>
+</nav>
+
+<header class="pt-32 pb-16 px-6 max-w-6xl mx-auto border-b border-gray-200">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+      Evorise Consulting <br><span class="gradient-text">Onboarding Portal</span>
+    </h1>
+    <p class="text-xl text-gray-600 leading-relaxed">
+      Panduan komprehensif untuk Project Officer dan anggota tim baru. Pelajari proses bisnis, peran operasional, hingga standar metodologi pembangunan internasional kami.
+    </p>
+  </div>
+</header>
+
+<section id="budaya" class="py-20 px-6 max-w-6xl mx-auto">
+  <div class="max-w-3xl">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-800 text-white font-bold text-sm">1</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-800">Identitas & Operasional</span>
+    </div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Budaya & Proses Bisnis Evorise</h2>
+    
+    <p class="mb-6 text-gray-600 text-lg">
+      Sektor pembangunan internasional dan konsultansi dampak beroperasi di persimpangan yang kompleks antara sistem pasar, kesetaraan sosial, dan evaluasi ketat. Evorise Consulting hadir sebagai mitra berorientasi dampak yang membantu organisasi klien mengambil keputusan strategis berbasis bukti (<em>evidence-based</em>).
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6 my-10">
+      <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-800 mb-3">Visi & Misi</div>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+          <strong class="text-gray-900">Visi:</strong> Menjadi mitra konsultansi yang dipercaya untuk mendorong keputusan strategis berbasis bukti, menghubungkan wawasan dengan implementasi nyata.
+        </p>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          <strong class="text-gray-900">Misi:</strong> Menyediakan layanan advisory, riset, evaluasi, dan pengembangan sistem (MEL) yang berkualitas tinggi agar klien bekerja lebih adaptif dan berdampak.
+        </p>
+      </div>
+      <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow">
+        <div class="text-xs font-bold uppercase tracking-widest text-brand-800 mb-3">Core Values</div>
+        <ul class="space-y-3 text-sm text-gray-600">
+          <li><strong class="text-gray-900">Integrity & Professionalism:</strong> Selalu menjaga kualitas data dan etika.</li>
+          <li><strong class="text-gray-900">Curiosity & Accountability:</strong> Keingintahuan menggali akar masalah, dengan tanggung jawab penuh atas <em>deliverables</em>.</li>
+          <li><strong class="text-gray-900">Collaboration:</strong> Proyek selalu multidisiplin; mengutamakan sinergi tanpa ego sektoral.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 mt-12 mb-6">Siklus Proses Bisnis (Business Process)</h3>
+    <p class="text-gray-600 mb-6">Setiap proyek di Evorise umumnya melewati 4 tahapan utama. Peran <em>Project Officer</em> (PO) hadir di setiap tahap ini untuk memastikan kelancaran alur.</p>
+
+    <!-- Definition List for Process -->
+    <div class="space-y-4">
+      <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-gray-200 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-brand-100 text-brand-800 flex items-center justify-center font-black text-xl">1</div>
+        <div>
+          <h4 class="font-bold text-gray-900 text-lg">Lead & Scoping</h4>
+          <p class="text-sm text-gray-600 mt-1 leading-relaxed">Peluang datang (tender/referral). Tim mengumpulkan ToR, menilai kecocokan kapasitas, mengidentifikasi kebutuhan data awal, dan merumuskan kesimpulan. <br><strong class="text-brand-800">Tugas PO:</strong> Merapikan dokumen, membuat <em>summary</em> singkat, dan mencatat pertanyaan klarifikasi untuk klien.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-gray-200 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-brand-100 text-brand-800 flex items-center justify-center font-black text-xl">2</div>
+        <div>
+          <h4 class="font-bold text-gray-900 text-lg">Proposal Development</h4>
+          <p class="text-sm text-gray-600 mt-1 leading-relaxed">Penyusunan pendekatan teknis, metodologi, workplan, dan RAB (Proposal Finansial). <br><strong class="text-brand-800">Tugas PO:</strong> Kompilasi CV dan profil perusahaan, merapikan format, membantu <em>drafting</em> logistik/timeline, dan version control dokumen.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-gray-200 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-brand-100 text-brand-800 flex items-center justify-center font-black text-xl">3</div>
+        <div>
+          <h4 class="font-bold text-gray-900 text-lg">Implementation</h4>
+          <p class="text-sm text-gray-600 mt-1 leading-relaxed">Proyek berjalan (Kickoff, pengumpulan data, analisis, drafting laporan). <br><strong class="text-brand-800">Tugas PO:</strong> Membuat MoM, tracker deadline, mengingatkan PIC, mengelola <em>evidence</em> lapangan, dan Quality Control (QC) dasar.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:border-gray-200 transition-colors">
+        <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-brand-100 text-brand-800 flex items-center justify-center font-black text-xl">4</div>
+        <div>
+          <h4 class="font-bold text-gray-900 text-lg">Closing & Knowledge Capture</h4>
+          <p class="text-sm text-gray-600 mt-1 leading-relaxed">Penyerahan final deliverables, rekonsiliasi administrasi, dan internal debrief. <br><strong class="text-brand-800">Tugas PO:</strong> Memastikan folder arsip rapi, mengumpulkan <em>lessons learned</em>, dan memastikan tidak ada invoice yang tertinggal bersama tim Finance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="peran-po" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-200 bg-gray-50">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-800 text-white font-bold text-sm">2</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-800">Manajemen Proyek</span>
+    </div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Peran & Manajemen Proyek</h2>
+    
+    <p class="mb-6 text-gray-600">
+      Manajemen proyek di sektor pembangunan (NGO/Konsultan) menggunakan standar adaptif seperti <strong>Project DPro (PMD Pro)</strong>. Tujuannya adalah menjembatani jarak antara desain proposal yang ideal dengan realitas lapangan yang dinamis (seperti birokrasi, dinamika stakeholder, dll).
+    </p>
+
+    <div class="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-lg my-8">
+      <p class="text-accent-600 text-sm leading-relaxed">
+        <strong class="text-accent-600 font-bold block mb-1">Pilar Utama Project Officer:</strong>
+        Peran ini bukan sekadar admin. Anda adalah tulang punggung proyek melalui 3 pilar: <strong>Coordination</strong> (menghubungkan aktor), <strong>Documentation</strong> (menjaga jejak rekam/MoM), dan <strong>Execution Support</strong> (bantuan logistik, drafting, dan QC).
+      </p>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 mt-10 mb-6">PO vs Project Manager (PM)</h3>
+    <div class="overflow-x-auto bg-white rounded-xl shadow-sm border border-gray-200">
+      <table class="w-full text-left border-collapse text-sm">
+        <thead>
+          <tr class="bg-brand-800 text-white">
+            <th class="p-4 font-semibold w-1/4">Fokus</th>
+            <th class="p-4 font-semibold w-3/8 border-l border-brand-700">Project Officer (PO)</th>
+            <th class="p-4 font-semibold w-3/8 border-l border-brand-700">Project Manager / Lead (PM)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200 text-gray-600">
+          <tr>
+            <td class="p-4 font-semibold text-gray-900">Peran Utama</td>
+            <td class="p-4">Dukungan operasional, pemantauan tugas harian, administrasi, dan <em>seamless project flow</em>.</td>
+            <td class="p-4 border-l border-gray-100">Pengawasan strategis, manajemen siklus proyek penuh, evaluasi, dan negosiasi.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="p-4 font-semibold text-gray-900">Tanggung Jawab</td>
+            <td class="p-4">Melacak deadline, mengatur jadwal, notulensi (MoM), QC dasar, dan asistensi teknis.</td>
+            <td class="p-4 border-l border-gray-100">Manajemen budget kompleks, mitigasi risiko, dan kepemimpinan lintas fungsi.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-semibold text-gray-900">Interaksi Stakeholder</td>
+            <td class="p-4"><strong>Fokus Internal:</strong> Lapor ke PM untuk penyelarasan progres dengan jadwal utama.</td>
+            <td class="p-4 border-l border-gray-100"><strong>Fokus Eksternal:</strong> Representasi utama ke klien dan komite pengarah (<em>steering committee</em>).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="text-xl font-bold text-brand-800 mt-12 mb-4 flex items-center gap-2">
+      <span class="w-1.5 h-6 bg-brand-500 rounded-full inline-block"></span>
+      The Evorise Standard (Ekspektasi Perilaku)
+    </h3>
+    <ul class="space-y-4 text-gray-600 pl-4 border-l-2 border-gray-100 ml-1">
+      <li class="relative">
+        <div class="absolute -left-6 top-1.5 w-3 h-3 bg-white border-2 border-brand-500 rounded-full"></div>
+        <strong class="text-gray-900 block">Ownership (Rasa Memiliki)</strong>
+        Tidak menunggu diingatkan. Setelah meeting, PO langsung mengirim MoM, mengupdate tracker, dan mengingatkan PIC.
+      </li>
+      <li class="relative">
+        <div class="absolute -left-6 top-1.5 w-3 h-3 bg-white border-2 border-brand-500 rounded-full"></div>
+        <strong class="text-gray-900 block">Accuracy (Ketelitian)</strong>
+        Detail itu krusial. Sebelum submit draft, cek ulang format, ejaan, konsistensi penomoran, dan kelengkapan.
+      </li>
+      <li class="relative">
+        <div class="absolute -left-6 top-1.5 w-3 h-3 bg-white border-2 border-brand-500 rounded-full"></div>
+        <strong class="text-gray-900 block">Learning Agility</strong>
+        Siap beradaptasi. Jika tidak paham istilah sektor/metodologi, catat, riset singkat, lalu tanyakan kepada Specialist.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="mel" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-200">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-800 text-white font-bold text-sm">3</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-800">Materi Teknis Inti</span>
+    </div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Monitoring, Evaluation, & Learning (MEL)</h2>
+    
+    <p class="mb-8 text-gray-600 text-lg">
+      MEL beroperasi sebagai "sistem saraf pusat" dari setiap intervensi pembangunan. Ini adalah pendekatan empiris untuk melacak dan mengevaluasi dampak nyata proyek.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <div>
+        <h3 class="text-lg font-bold text-gray-900 mb-4">Kriteria Evaluasi OECD DAC</h3>
+        <p class="text-sm text-gray-600 mb-4">Sebagai standar global, kita mengevaluasi proyek melalui lensa:</p>
+        <div class="space-y-3">
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+            <span class="font-bold text-brand-800 text-sm">Relevance & Coherence</span>
+            <p class="text-xs text-gray-500 mt-1">Apakah program menjawab kebutuhan nyata? Selaras dengan kebijakan lain?</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+            <span class="font-bold text-brand-800 text-sm">Effectiveness & Efficiency</span>
+            <p class="text-xs text-gray-500 mt-1">Apakah tujuan tercapai dengan penggunaan dana & waktu paling ekonomis?</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+            <span class="font-bold text-brand-800 text-sm">Impact & Sustainability</span>
+            <p class="text-xs text-gray-500 mt-1">Apa efek jangka panjangnya? Akankah manfaat berlanjut tanpa donor?</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold text-gray-900 mb-4">Konteks Indonesia: Standar Bappenas</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Kerangka evaluasi mandiri Evorise harus selaras dengan metrik Birokrasi Nasional (Bappenas), seperti kriteria Penghargaan Pembangunan Daerah (PPD). Evaluator akan melihat:
+        </p>
+        <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+          <li>Pencapaian target kuantitatif (RPJMN/RKP).</li>
+          <li>Kualitas dokumen perencanaan (Sinergi pusat & daerah).</li>
+          <li>Inovasi nyata dalam penyelesaian masalah birokrasi/sosial.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 mt-12 mb-6">Theory of Change (ToC) vs Logical Framework</h3>
+    <p class="text-gray-600 mb-6">Walau sering dianggap sama,eduanya memiliki filosofi dan fungsi berbeda. Biasanya kita mendesain strategi dengan ToC, lalu mengukurnya dengan Logframe.</p>
+
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="border-2 border-brand-100 rounded-xl p-6 bg-white">
+        <h4 class="font-bold text-brand-800 mb-3 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+          Theory of Change (ToC)
+        </h4>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li><strong>Fokus:</strong> Menjawab <em>MENGAPA</em> dan <em>BAGAIMANA</em> perubahan terjadi.</li>
+          <li><strong>Bentuk:</strong> Visual diagram non-linear yang kompleks dan deskripsi naratif.</li>
+          <li><strong>Filosofi:</strong> Perubahan sosial itu dinamis, kompleks, dan bergantung pada asumsi kontekstual.</li>
+          <li><strong>Penggunaan:</strong> Saat fase desain strategi dan diskusi stakeholder.</li>
+        </ul>
+      </div>
+      <div class="border-2 border-gray-200 rounded-xl p-6 bg-white">
+        <h4 class="font-bold text-gray-700 mb-3 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+          Logical Framework (Logframe)
+        </h4>
+        <ul class="text-sm text-gray-600 space-y-2">
+          <li><strong>Fokus:</strong> Menjawab <em>APA</em> yang harus diukur. Alat ukur kepatuhan.</li>
+          <li><strong>Bentuk:</strong> Matriks 4x4 (Input > Aktivitas > Output > Outcome > Impact).</li>
+          <li><strong>Filosofi:</strong> Implementasi proyek dianggap linear dan terstruktur.</li>
+          <li><strong>Penggunaan:</strong> Pelaporan ke donor, tracking target kuartalan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="msd" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-200 bg-gray-50">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-800 text-white font-bold text-sm">4</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-800">Materi Teknis Inti</span>
+    </div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Market Systems Development (MSD)</h2>
+    
+    <p class="mb-6 text-gray-600">
+      Intervensi modern tidak lagi sekadar membagi-bagikan aset (yang memicu ketergantungan). <strong>MSD (M4P)</strong> bertujuan memfasilitasi perubahan sistemik agar pasar komersial berpihak pada kelompok miskin. Kita bertindak sebagai "fasilitator", bukan "pemain pasar".
+    </p>
+
+    <!-- Doughnut concept -->
+    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm mb-10">
+      <h3 class="font-bold text-gray-900 mb-3">Model Donat Sistem Pasar</h3>
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="flex-1 space-y-3 text-sm text-gray-600">
+          <p><strong class="text-brand-700">1. Core Market:</strong> Transaksi utama supply dan demand (produsen dan pembeli).</p>
+          <p><strong class="text-brand-700">2. Supporting Functions:</strong> Layanan agar pasar berjalan (misal: R&D, logistik, kredit, benih).</p>
+          <p><strong class="text-brand-700">3. Rules:</strong> Regulasi formal (kebijakan pemerintah) dan informal (norma sosial/gender).</p>
+        </div>
+        <div class="flex-1 bg-brand-50 rounded-lg p-4 text-sm text-brand-900 italic border border-brand-100 flex items-center">
+          "Contoh Kasus PRISMA (DFAT): Alih-alih membeli pakan untuk peternak, PRISMA memfasilitasi kemitraan komersial antara perusahaan pakan & peternak kecil, sambil mengadvokasi standar pakan nasional ke pemerintah."
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">Mengukur Perubahan Sistemik: Kerangka AAER</h3>
+    <p class="text-gray-600 text-sm mb-6">Bagaimana inovasi menyebar di pasar tanpa subsidi donor? Kita mengukurnya dengan framework AAER:</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="bg-white border border-gray-200 rounded-lg p-4 text-center hover:border-brand-500 transition-colors">
+        <div class="text-2xl font-black text-brand-800 mb-1">Ad</div>
+        <div class="text-xs font-bold uppercase text-gray-500 mb-2">Adopt</div>
+        <p class="text-xs text-gray-600">Mitra pioneer menguji praktik baru pro-poor dengan biaya (cost-share).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-4 text-center hover:border-brand-500 transition-colors">
+        <div class="text-2xl font-black text-brand-800 mb-1">Ad</div>
+        <div class="text-xs font-bold uppercase text-gray-500 mb-2">Adapt</div>
+        <p class="text-xs text-gray-600">Pioneer berinvestasi mandiri tanpa dana subsidi proyek lagi.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-4 text-center hover:border-accent-500 transition-colors">
+        <div class="text-2xl font-black text-accent-500 mb-1">Ex</div>
+        <div class="text-xs font-bold uppercase text-gray-500 mb-2">Expand</div>
+        <p class="text-xs text-gray-600">Pesaing/pemain lain meniru inovasi tersebut secara mandiri (crowding-in).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-lg p-4 text-center hover:border-accent-500 transition-colors">
+        <div class="text-2xl font-black text-accent-500 mb-1">Re</div>
+        <div class="text-xs font-bold uppercase text-gray-500 mb-2">Respond</div>
+        <p class="text-xs text-gray-600">Sistem luas (bank/pemerintah) menyesuaikan regulasi untuk merespons inovasi.</p>
+      </div>
+    </div>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-3">Value Chain Analysis (VCA) - ValueLinks 2.0</h3>
+    <p class="text-gray-600 text-sm">
+      Jika MSD adalah analisis makro, VCA adalah alat diagnostik mikro. Evorise menggunakan standar GIZ ValueLinks 2.0 yang memetakan rantai nilai sebuah produk secara utuh, tidak hanya sisi ekonomi (margin/financing gaps), tetapi juga sisi lingkungan (climate proofing) dan sosial (pekerja).
+    </p>
+  </div>
+</section>
+
+<section id="gedsi" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-200">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-brand-800 text-white font-bold text-sm">5</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-800">Materi Teknis Inti</span>
+    </div>
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6">GEDSI & Pengembangan Proposal</h2>
+
+    <div class="grid md:grid-cols-5 gap-8">
+      <div class="md:col-span-2">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Pendekatan Twin-Track (GEDSI)</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Pertumbuhan ekonomi tidak otomatis menciptakan kesetaraan. Standar donor (DFAT/USAID) mensyaratkan <strong>Gender Equality, Disability, and Social Inclusion (GEDSI)</strong> via dua jalur:
+        </p>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="bg-brand-50 p-3 rounded border border-brand-100">
+            <strong class="text-brand-800">Mainstreaming:</strong> Memastikan proyek umum (misal: pertanian) dapat diakses & responsif terhadap perempuan/disabilitas.
+          </li>
+          <li class="bg-accent-50 p-3 rounded border border-accent-100">
+            <strong class="text-accent-600">Targeted Interventions:</strong> Proyek yang murni dirancang spesifik untuk kelompok marginal mengatasi hambatan khas mereka.
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">Color Team Review (Proposal)</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Memenangkan hibah dari RFP donor membutuhkan proses Quality Assurance bertingkat yang sangat ketat (<em>compliant & compelling</em>).
+        </p>
+        <div class="space-y-2">
+          <div class="flex border border-gray-200 rounded-lg overflow-hidden">
+            <div class="w-24 bg-pink-100 text-pink-800 font-bold text-xs flex items-center justify-center uppercase tracking-wider p-2">Pink Team</div>
+            <div class="flex-1 p-3 text-sm text-gray-600 bg-white">Evaluasi storyboard awal, win themes, dan kecocokan strategis.</div>
+          </div>
+          <div class="flex border border-red-200 rounded-lg overflow-hidden shadow-sm">
+            <div class="w-24 bg-red-600 text-white font-bold text-xs flex items-center justify-center uppercase tracking-wider p-2">Red Team</div>
+            <div class="flex-1 p-3 text-sm text-gray-800 bg-red-50 font-medium"><strong>Review Paling Kritis!</strong> Simulasi evaluator independen yang menilai secara brutal draft kasar sesuai matriks kriteria RFP.</div>
+          </div>
+          <div class="flex border border-gray-200 rounded-lg overflow-hidden">
+            <div class="w-24 bg-green-100 text-green-800 font-bold text-xs flex items-center justify-center uppercase tracking-wider p-2">Green Team</div>
+            <div class="flex-1 p-3 text-sm text-gray-600 bg-white">Validasi budget (RAB), pricing-to-win, dan logika finansial.</div>
+          </div>
+          <div class="flex border border-gray-200 rounded-lg overflow-hidden">
+            <div class="w-24 bg-yellow-100 text-yellow-800 font-bold text-xs flex items-center justify-center uppercase tracking-wider p-2 text-center">Gold Team</div>
+            <div class="flex-1 p-3 text-sm text-gray-600 bg-white">Polesan final eksekutif, cek format margin, dan kepatuhan administrasi penuh.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sop" class="py-20 px-6 max-w-6xl mx-auto border-t border-gray-200 bg-brand-800 text-white rounded-t-3xl mt-10">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center gap-3 mb-4">
+      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-white text-brand-800 font-bold text-sm">6</span>
+      <span class="text-sm font-bold tracking-widest uppercase text-brand-100">SOP Internal & Next Steps</span>
+    </div>
+    <h2 class="text-3xl font-extrabold mb-8">Etika Kerja & Roadmap 30 Hari</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-brand-100 border-b border-brand-700 pb-2">Do's & Don'ts Representasi Evorise</h3>
+        <ul class="space-y-4 text-sm text-brand-50">
+          <li class="flex gap-3 items-start">
+            <svg class="w-5 h-5 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span>Cek ulang isi email, lampiran, dan nama klien sebelum "Send".</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <svg class="w-5 h-5 text-green-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            <span>Simpan semua data pada direktori cloud resmi Evorise, bukan perangkat pribadi.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <svg class="w-5 h-5 text-red-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <span>Jangan menyetujui tambahan <em>scope of work</em> dari klien tanpa izin Project Lead.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <svg class="w-5 h-5 text-red-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <span>Jangan berikan opini pribadi sebagai "posisi/temuan resmi" Evorise.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white text-gray-800 p-6 rounded-xl shadow-lg">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">Roadmap Onboarding (Checklist)</h3>
+        <p class="text-xs text-gray-500 mb-4">Diskusikan progres ini pada sesi check-in mingguan bersama Manager Anda.</p>
+        
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3 p-2 hover:bg-gray-50 rounded transition-colors">
+            <input type="checkbox" id="w1" class="check-custom mt-1 w-4 h-4 cursor-pointer">
+            <label for="w1" class="cursor-pointer flex-1">
+              <span class="block text-sm font-bold text-gray-900">Minggu 1: Orientasi & Akses</span>
+              <span class="block text-xs text-gray-500 mt-0.5">Email aktif, paham struktur folder, baca SOP Advance/Reimburse.</span>
+            </label>
+          </li>
+          <li class="flex items-start gap-3 p-2 hover:bg-gray-50 rounded transition-colors">
+            <input type="checkbox" id="w2" class="check-custom mt-1 w-4 h-4 cursor-pointer">
+            <label for="w2" class="cursor-pointer flex-1">
+              <span class="block text-sm font-bold text-gray-900">Minggu 2: Shadowing</span>
+              <span class="block text-xs text-gray-500 mt-0.5">Ikut rapat (shadowing), menulis MoM dasar, observasi gaya komunikasi tim.</span>
+            </label>
+          </li>
+          <li class="flex items-start gap-3 p-2 hover:bg-gray-50 rounded transition-colors">
+            <input type="checkbox" id="w3" class="check-custom mt-1 w-4 h-4 cursor-pointer">
+            <label for="w3" class="cursor-pointer flex-1">
+              <span class="block text-sm font-bold text-gray-900">Minggu 3: Operasional Terpandu</span>
+              <span class="block text-xs text-gray-500 mt-0.5">Update Project Tracker mandiri, follow-up internal, dan QC data.</span>
+            </label>
+          </li>
+          <li class="flex items-start gap-3 p-2 hover:bg-gray-50 rounded transition-colors">
+            <input type="checkbox" id="w4" class="check-custom mt-1 w-4 h-4 cursor-pointer">
+            <label for="w4" class="cursor-pointer flex-1">
+              <span class="block text-sm font-bold text-gray-900">Minggu 4: Kemandirian</span>
+              <span class="block text-xs text-gray-500 mt-0.5">Check-in akhir bulan, evaluasi gap pemahaman teknis untuk training.</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="font-bold text-gray-300 tracking-wider mb-2">EVORISE CONSULTING</p>
+    <p>Your Partner in Impact.</p>
+    <p class="mt-4 text-xs opacity-60">&copy; 2026. Dokumen Internal: Rahasia & Tidak Untuk Didistribusikan Secara Publik.</p>
+  </div>
+</footer>
+
+</body>
+</html>
